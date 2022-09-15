@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+	function SearchFunction() {
+		var input = document.getElementById("myInput");
+		var filter = input.value.toLowerCase();
+		var nodes = document.getElementsByClassName("target");
+		
+		for (i = 0; i < nodes.length; i++) {
+			if (nodes[i].innerText.toLowerCase().includes(filter)) {
+			   nodes[i].style.display = "block";
+			} else {
+			   nodes[i].style.display = "none";
+			}
+		}
+	}
+
+</script>
+
+<style>
+
+html {
+font-family:monospace;
+
+    text-color: black;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+    
+	
+}
+
+body {
+	 background-image:url("white_lion_background.jpg");
+	 background-position: center;
+	 background-attachment:fixed;
+	 background-size: cover;
+}
+
+</style>
+
+</head>
+  <body>
+  
+<table align = "center">
+
+<tr>
+<td align = "left">
+<button onclick="document.location='home.html'" style="font-size:20px;">Home</button>
+</td>
+
+</tr>
+
+</table>
+
+<h3 align = "center"> Search to explore different content </h3> 
+
+<div class="topnav" align = "center">
+  <input type="text" id="myInput" onkeyup="SearchFunction()" placeholder="Search">
+</div>
+
+<table align = "center">
+<tr>
+<td>
+<div class="target">
+Heatwaves
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"> 
+          
+        <source src="videos/heatwaves.mp4" 
+            type="video/mp4"> 
+</video>
+</div>
+</td>
+
+<td> 
+<div class="target">
+Panda
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/panda.mp4" 
+            type="video/mp4"> 
+</video>
+</div>  
+</td>
+
+<td> 
+<div class="target">
+Sewey
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/sewey.mp4" 
+            type="video/mp4"> 
+</video>
+</div>   
+</td>
+<td> 
+<div class="target">
+Rental
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/rental.mp4" 
+            type="video/mp4"> 
+</video> 
+</div>
+</td>
+
+</tr>
+
+<tr>
+
+<td> 
+<div class="target">
+Timmy
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/timmy.mp4" 
+            type="video/mp4"> 
+</video> 
+</div>
+</td>
+
+<td> 
+<div class="target">
+Heart
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/heart.mp4" 
+            type="video/mp4"> 
+</video> 
+</div>
+</td>
+
+<td> 
+<div class="target">
+Shake
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/shake.mp4" 
+            type="video/mp4"> 
+</video> 
+</div>
+</td>
+
+<td> 
+<div class="target">
+Lemonade
+<video width="300px" height="300px" 
+        controls="controls" class="myVideos"/> 
+          
+        <source src="videos/lemonade.mp4" 
+            type="video/mp4"> 
+</video> 
+</div>
+</td>
+
+</tr>
+</table>
+
+  </body>
+</html>
